@@ -61,8 +61,24 @@
             padding-right: 1.25em;
         }
 
+        .tabs-wrapper .tabs.is-toggle li.is-active a::after {
+            content: "• ";
+            color: #BAC2FF;
+            transform: scale(3.4);
+            padding-left: 6px;
+            padding-bottom: 3px;
+        }
+
         .tabs-wrapper .tabs.is-toggle li:not(.is-active) a {
             border: none;
+        }
+
+        .tabs-wrapper .tabs.is-toggle li:not(.is-active) a:after {
+            content: "• ";
+            visibility: hidden;
+            transform: scale(3.4);
+            padding-left: 6px;
+            padding-bottom: 3px;
         }
 
         .tabs-wrapper .tabs.is-toggle a:hover {
