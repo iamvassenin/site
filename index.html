@@ -11,7 +11,7 @@
             font-family: 'craftwork';
             src: url('fonts/craftwork.ttf');
         }
-        
+
         @font-face {
             font-family: 'proxima';
             src: url('fonts/proxima.ttf');
@@ -19,6 +19,10 @@
 
         body {
             font-family: 'proxima', sans-serif;
+        }
+
+        .is-craftwork {
+            font-family: 'craftwork', sans-serif !important;
         }
 
         .has-background-link {
@@ -34,35 +38,43 @@
         }
 
         .is-size-1 {
-            font-family: 'craftwork', sans-serif;
             font-size: 80px !important;
             font-weight: 400;
             line-height: 80px;
             letter-spacing: -0.02em;
         }
 
-        .custom-toggle>.tabs {
+        .tabs-wrapper>.tabs {
             background-color: #101D34;
             border-radius: 48px;
             padding: 20px 24px;
             width: 36%;
+            max-width: 420px;
             margin: auto;
         }
 
-        .custom-toggle .tabs.is-toggle li.is-active a {
+        .tabs-wrapper .tabs.is-toggle li.is-active a {
             background-color: transparent !important;
             border-color: #fff !important;
-            border-bottom-right-radius: 9999px;
-            border-top-right-radius: 9999px;
+            border-radius: 9999px!important;
             padding-right: 1.25em;
         }
 
-        .custom-toggle .tabs.is-toggle li:last-child a {
-            border: none !important;
+        .tabs-wrapper .tabs.is-toggle li:not(.is-active) a {
+            border: none;
         }
 
-        .custom-toggle .tabs.is-toggle a:hover {
+        .tabs-wrapper .tabs.is-toggle a:hover {
             border-radius: 9999px !important;
+        }
+
+        .tabs-content li {
+            display: none;
+            list-style: none;
+        }
+
+        .tabs-content li.is-active {
+            display: block;
         }
 
         section.is-rounded {
@@ -97,14 +109,14 @@
         <div class="container">
             <nav class="navbar has-background-link" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    <a role="button" class="has-text-white navbar-burger" aria-label="menu" aria-expanded="false"
                         data-target="navbarBasic">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                     </a>
                 </div>
-                <div id="navbarBasic" class="navbar-menu">
+                <div id="navbarBasic" class="has-background-link navbar-menu" style="box-shadow: none;">
                     <div class="navbar-end">
                         <div class="navbar-item">
                             <div class="buttons">
@@ -124,10 +136,10 @@
     <!-- Top Section. Title -->
     <section class="section is-medium has-background-link has-text-white">
         <div class="container">
-            <h1 class="title is-size-1 has-text-white">
+            <h1 class="title is-size-1 has-text-white is-craftwork">
                 КОУЧИНГ
             </h1>
-            <p class="subtitle is-size-3 has-text-white">
+            <p class="subtitle is-size-3 has-text-white is-craftwork">
                 от <a class="is-underlined has-text-white">Вячеслава Васенина</a>
             </p>
         </div>
@@ -157,147 +169,176 @@
         </div>
     </section>
     <!-- Toggle -->
-    <section class="section has-background-link has-text-white">
-        <div class="container">
-            <div class="custom-toggle">
-                <div class="tabs is-toggle is-toggle-rounded is-large is-centered">
-                    <ul>
-                        <li class="is-active">
-                            <a class="is-uppercase">
-                                Личность
-                            </a>
-                        </li>
-                        <li>
-                            <a class="is-uppercase">
-                                Бизнес
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <section class="has-background-link has-text-white">
+        <div class="tabs-wrapper">
+            <div class="tabs is-toggle is-toggle-rounded is-large is-centered">
+                <ul>
+                    <li class="is-active mr-3">
+                        <a class="is-uppercase">
+                            Личность
+                        </a>
+                    </li>
+                    <li>
+                        <a class="is-uppercase">
+                            Бизнес
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </div>
-    </section>
-    <!-- Tab One. Personal -->
-    <section class="section is-medium pt-0 has-background-link has-text-white">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-half">
-                    <div class="block">
-                        <p class="is-size-1">I Am —</p>
-                        <p class="is-size-4">это метод служащий человеку в его намерении:</p>
-                    </div>
-                    <div class="block is-size-4">
-                        <ul>
-                            <li>– трансформироваться</li>
-                            <li>– найти новую или изменить текущую модель</li>
-                            <li>– выработать стратегию</li>
-                            <li>– настроить управление</li>
-                            <li>– создать эффективную команду</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <!-- Personality Cards -->
-    <section class="section is-medium section is-medium has-background-white has-text-link is-rounded"
-        style="margin-top: -42px;">
-        <div class="container">
-            <div class="block is-size-2 is-uppercase">
-                Программы для личности
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="card" style="border-radius: 1rem;">
-                        <div class="card-content has-background-custom has-text-link">
-                            <div class="content">
-                                <div class="block is-size-4">Red</div>
-                                <div class="block">В жизни каждого из нас наступают моменты, когда мы ощущаем, что
-                                    теряем себя,
-                                    теряем смысл и направление. Эти моменты могут быть невероятно трудными и вызывать
-                                    чувство
-                                    беспомощности.  Личностный кризис, выгорание и стагнация — это то, что понимается в
-                                    “I Am”
-                                    как точка нового начала. Курс позволит выйти из кризиса или заряженной ситуации,
-                                    выравнить
-                                    эмоциональный фон, и выработать новую стратегию поведения.</div>
-                                <div class="block">
-                                    <a href="#form" class="button is-outlined is-rounded is-link is-fullwidth">
-                                        Заказать диагностику
-                                    </a>
+            <div class="tabs-content">
+                <ul>
+                    <li class="is-active">
+                        <!-- Tab One. Personal -->
+                        <section class="section is-medium has-background-link has-text-white">
+                            <div class="container">
+                                <div class="columns">
+                                    <div class="column is-half">
+                                        <div class="block">
+                                            <p class="is-size-1 is-craftwork">I Am —</p>
+                                            <p class="is-size-4">это метод служащий человеку в его намерении:</p>
+                                        </div>
+                                        <div class="block is-size-4">
+                                            <p>– трансформироваться</p>
+                                            <p>– найти новую или изменить текущую модель</p>
+                                            <p>– выработать стратегию</p>
+                                            <p>– настроить управление</p>
+                                            <p>– создать эффективную команду</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>
+                        <!-- Personality Cards -->
+                        <section
+                            class="section is-medium section is-medium has-background-white has-text-link is-rounded">
+                            <div class="container">
+                                <div class="block is-size-2 is-uppercase">
+                                    Программы для личности
+                                </div>
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="card" style="border-radius: 1rem;">
+                                            <div class="card-content has-background-custom has-text-link">
+                                                <div class="content">
+                                                    <div class="block is-size-4">Red</div>
+                                                    <div class="block">В жизни каждого из нас наступают моменты,
+                                                        когда мы ощущаем, что
+                                                        теряем себя,
+                                                        теряем смысл и направление. Эти моменты могут быть
+                                                        невероятно трудными и вызывать
+                                                        чувство
+                                                        беспомощности.  Личностный кризис, выгорание и стагнация —
+                                                        это то, что понимается в
+                                                        “I Am”
+                                                        как точка нового начала. Курс позволит выйти из кризиса или
+                                                        заряженной ситуации,
+                                                        выравнить
+                                                        эмоциональный фон, и выработать новую стратегию поведения.
+                                                    </div>
+                                                    <div class="block">
+                                                        <a href="#form"
+                                                            class="button is-outlined is-rounded is-link is-fullwidth">
+                                                            Заказать диагностику
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="card" style="border-radius: 1rem;">
+                                            <div class="card-content has-background-custom has-text-link">
+                                                <div class="content">
+                                                    <div class="block is-size-4">Red</div>
+                                                    <div class="block">В жизни каждого из нас наступают моменты,
+                                                        когда мы ощущаем, что
+                                                        теряем себя,
+                                                        теряем смысл и направление. Эти моменты могут быть
+                                                        невероятно трудными и вызывать
+                                                        чувство
+                                                        беспомощности.  Личностный кризис, выгорание и стагнация —
+                                                        это то, что понимается в
+                                                        “I Am”
+                                                        как точка нового начала. Курс позволит выйти из кризиса или
+                                                        заряженной ситуации,
+                                                        выравнить
+                                                        эмоциональный фон, и выработать новую стратегию поведения.
+                                                    </div>
+                                                    <div class="block">
+                                                        <a href="#form"
+                                                            class="button is-outlined is-rounded is-link is-fullwidth">
+                                                            Заказать диагностику
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="card" style="border-radius: 1rem;">
+                                            <div class="card-content has-background-custom has-text-link">
+                                                <div class="content">
+                                                    <div class="block is-size-4">Red</div>
+                                                    <div class="block">В жизни каждого из нас наступают моменты,
+                                                        когда мы ощущаем, что
+                                                        теряем себя,
+                                                        теряем смысл и направление. Эти моменты могут быть
+                                                        невероятно трудными и вызывать
+                                                        чувство
+                                                        беспомощности.  Личностный кризис, выгорание и стагнация —
+                                                        это то, что понимается в
+                                                        “I Am”
+                                                        как точка нового начала. Курс позволит выйти из кризиса или
+                                                        заряженной ситуации,
+                                                        выравнить
+                                                        эмоциональный фон, и выработать новую стратегию поведения.
+                                                    </div>
+                                                    <div class="block">
+                                                        <a href="#form"
+                                                            class="button is-outlined is-rounded is-link is-fullwidth">
+                                                            Заказать диагностику
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="card" style="border-radius: 1rem;">
+                                            <div class="card-content has-background-custom has-text-link">
+                                                <div class="content">
+                                                    <div class="block is-size-4">Red</div>
+                                                    <div class="block">В жизни каждого из нас наступают моменты,
+                                                        когда мы ощущаем, что
+                                                        теряем себя,
+                                                        теряем смысл и направление. Эти моменты могут быть
+                                                        невероятно трудными и вызывать
+                                                        чувство
+                                                        беспомощности.  Личностный кризис, выгорание и стагнация —
+                                                        это то, что понимается в
+                                                        “I Am”
+                                                        как точка нового начала. Курс позволит выйти из кризиса или
+                                                        заряженной ситуации,
+                                                        выравнить
+                                                        эмоциональный фон, и выработать новую стратегию поведения.
+                                                    </div>
+                                                    <div class="block">
+                                                        <a href="#form"
+                                                            class="button is-outlined is-rounded is-link is-fullwidth">
+                                                            Заказать диагностику
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card" style="border-radius: 1rem;">
-                        <div class="card-content has-background-custom has-text-link">
-                            <div class="content">
-                                <div class="block is-size-4">Red</div>
-                                <div class="block">В жизни каждого из нас наступают моменты, когда мы ощущаем, что
-                                    теряем себя,
-                                    теряем смысл и направление. Эти моменты могут быть невероятно трудными и вызывать
-                                    чувство
-                                    беспомощности.  Личностный кризис, выгорание и стагнация — это то, что понимается в
-                                    “I Am”
-                                    как точка нового начала. Курс позволит выйти из кризиса или заряженной ситуации,
-                                    выравнить
-                                    эмоциональный фон, и выработать новую стратегию поведения.</div>
-                                <div class="block">
-                                    <a href="#form" class="button is-outlined is-rounded is-link is-fullwidth">
-                                        Заказать диагностику
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card" style="border-radius: 1rem;">
-                        <div class="card-content has-background-custom has-text-link">
-                            <div class="content">
-                                <div class="block is-size-4">Red</div>
-                                <div class="block">В жизни каждого из нас наступают моменты, когда мы ощущаем, что
-                                    теряем себя,
-                                    теряем смысл и направление. Эти моменты могут быть невероятно трудными и вызывать
-                                    чувство
-                                    беспомощности.  Личностный кризис, выгорание и стагнация — это то, что понимается в
-                                    “I Am”
-                                    как точка нового начала. Курс позволит выйти из кризиса или заряженной ситуации,
-                                    выравнить
-                                    эмоциональный фон, и выработать новую стратегию поведения.</div>
-                                <div class="block">
-                                    <a href="#form" class="button is-outlined is-rounded is-link is-fullwidth">
-                                        Заказать диагностику
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="card" style="border-radius: 1rem;">
-                        <div class="card-content has-background-custom has-text-link">
-                            <div class="content">
-                                <div class="block is-size-4">Red</div>
-                                <div class="block">В жизни каждого из нас наступают моменты, когда мы ощущаем, что
-                                    теряем себя,
-                                    теряем смысл и направление. Эти моменты могут быть невероятно трудными и вызывать
-                                    чувство
-                                    беспомощности.  Личностный кризис, выгорание и стагнация — это то, что понимается в
-                                    “I Am”
-                                    как точка нового начала. Курс позволит выйти из кризиса или заряженной ситуации,
-                                    выравнить
-                                    эмоциональный фон, и выработать новую стратегию поведения.</div>
-                                <div class="block">
-                                    <a href="#form" class="button is-outlined is-rounded is-link is-fullwidth">
-                                        Заказать диагностику
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        </section>
+                    </li>
+                    <li>
+                        <h1>Music</h1>
+                    </li>
+                </ul>
             </div>
         </div>
     </section>
