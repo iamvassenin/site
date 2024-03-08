@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/timeline.min.css">
     <style>
         @font-face {
             font-family: 'craftwork';
@@ -99,6 +100,29 @@
             background-color: #192B4C;
             border-color: #192B4C;
             color: #fff;
+        }
+
+        .is-violet {
+            background-color: #BAC2FF !important;
+        }
+
+        .timeline-marker {
+            border: none !important;
+            width: 16px !important;
+            height: 16px !important;
+        }
+
+        .timeline .timeline-item::before,
+        .timeline-item:nth-of-type(2n+1)::before {
+            width: 4px !important;
+        }
+
+        .timeline .timeline-item::before {
+            left: -2px;
+        }
+
+        .timeline.is-centered .timeline-item:nth-of-type(2n)::before {
+            right: -2px;
         }
     </style>
 </head>
@@ -195,7 +219,7 @@
                                     <div class="column is-half">
                                         <div class="block">
                                             <p class="is-size-1 is-craftwork">I&nbsp;Am&nbsp;&mdash;</p>
-                                            <p class="is-size-4">это метод служащий человеку в&nbsp;его намерении:</p>
+                                            <p class="is-size-5">это метод служащий человеку в&nbsp;его намерении:</p>
                                         </div>
                                         <div class="block is-size-4">
                                             <p>&mdash;&nbsp;выйти из&nbsp;кризиса, выгорания и&nbsp;стагнации,</p>
@@ -318,7 +342,7 @@
                                     <div class="column is-half">
                                         <div class="block">
                                             <p class="is-size-1 is-craftwork">I&nbsp;Am&nbsp;&mdash;</p>
-                                            <p class="is-size-4">это метод служащий бизнесу в&nbsp;его намерении:</p>
+                                            <p class="is-size-5">это метод служащий бизнесу в&nbsp;его намерении:</p>
                                         </div>
                                         <div class="block is-size-4">
                                             <p>&mdash;&nbsp;трансформироваться,</p>
@@ -371,17 +395,26 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="column">
                                         <div class="card" style="border-radius: 1rem;">
                                             <div class="card-content has-background-custom has-text-link">
                                                 <div class="content">
                                                     <div class="block is-size-4 is-uppercase">White</div>
                                                     <div class="block">
-                                                        Наставник обладает знаниями и&nbsp;опытом, которые помогают нам найти оптимальные пути к&nbsp;цели. Он&nbsp;делится с&nbsp;нами своим мышлением и&nbsp;визией, обогащает нашу картину мира. Благодаря наставнику мы&nbsp;видим возможности там, где раньше видели только ограничения, и&nbsp;находим силы и&nbsp;решимость продолжать двигаться вперед, несмотря на&nbsp;трудности. Он&nbsp;верит в&nbsp;нас даже тогда, когда мы&nbsp;сомневаемся в&nbsp;себе, и&nbsp;помогает раскрыть наш истинный потенциал.
+                                                        Наставник обладает знаниями и&nbsp;опытом, которые помогают нам
+                                                        найти оптимальные пути к&nbsp;цели. Он&nbsp;делится с&nbsp;нами
+                                                        своим мышлением и&nbsp;визией, обогащает нашу картину мира.
+                                                        Благодаря наставнику мы&nbsp;видим возможности там, где раньше
+                                                        видели только ограничения, и&nbsp;находим силы и&nbsp;решимость
+                                                        продолжать двигаться вперед, несмотря на&nbsp;трудности.
+                                                        Он&nbsp;верит в&nbsp;нас даже тогда, когда мы&nbsp;сомневаемся
+                                                        в&nbsp;себе, и&nbsp;помогает раскрыть наш истинный потенциал.
                                                     </div>
                                                     <div class="block">
-                                                        White&nbsp;&mdash; это курс наставничества от&nbsp;Вячеслава Васенина, позволяющий пройти путь от&nbsp;цели до&nbsp;результата за&nbsp;шесть месяцев.
+                                                        White&nbsp;&mdash; это курс наставничества от&nbsp;Вячеслава
+                                                        Васенина, позволяющий пройти путь от&nbsp;цели
+                                                        до&nbsp;результата за&nbsp;шесть месяцев.
                                                     </div>
                                                     <div class="block">
                                                         <a href="#form"
@@ -405,8 +438,61 @@
     <!-- Work Model -->
     <section class="section is-medium has-background-dark-link has-text-white is-rounded">
         <div class="container">
-            <div class="block is-size-2 is-uppercase">
+            <div class="block is-size-2">
                 Модель работы
+            </div>
+            <div>
+                <div class="timeline is-centered">
+                    <div class="timeline-item is-white">
+                        <div class="timeline-marker is-violet"></div>
+                        <div class="timeline-content">
+                            <p class="is-size-5">Диагностика<br /> (бесплатно)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item is-white">
+                        <div class="timeline-marker is-violet"></div>
+                        <div class="timeline-content">
+                            <p class="is-size-5">Подбор решения<br /> и&nbsp;заключение<br /> психологического<br />
+                                контракта</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item is-white">
+                        <div class="timeline-marker is-violet"></div>
+                        <div class="timeline-content">
+                            <p class="is-size-5">Букинг курса</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item is-white">
+                        <div class="timeline-marker is-violet"></div>
+                        <div class="timeline-content">
+                            <p class="is-size-5">Предоплата<br /> первой и&nbsp;последней<br /> сессий курса</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item is-white">
+                        <div class="timeline-marker is-violet"></div>
+                        <div class="timeline-content">
+                            <p class="is-size-5">Процесс</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item is-white">
+                        <div class="timeline-marker is-violet"></div>
+                        <div class="timeline-content">
+                            <p class="is-size-5">Фиксация<br /> промежуточных<br /> результатов (бесплатно)</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item is-white">
+                        <div class="timeline-marker is-violet"></div>
+                        <div class="timeline-content">
+                            <p class="is-size-5">Процесс</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item is-white">
+                        <div class="timeline-marker is-violet"></div>
+                        <div class="timeline-content">
+                            <p class="is-size-5">Перфоманс ревью<br /> (бесплатно)</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
