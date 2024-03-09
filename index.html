@@ -101,7 +101,7 @@
         .card {
             height: 100%;
         }
-        
+
         .card .has-background-custom {
             background-color: rgba(186, 194, 255, 0.4);
             border-radius: 1rem !important;
@@ -146,6 +146,7 @@
             right: -2px;
         }
     </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -261,7 +262,7 @@
                                 </div>
                                 <div class="columns">
                                     <div class="column">
-                                        <div class="card" style="border-radius: 1rem;">
+                                        <div class="card" style="border-radius: 1rem;" data-aos="zoom-in">
                                             <div class="card-content has-background-custom has-text-link">
                                                 <div class="content">
                                                     <div class="block is-size-4 is-uppercase">Red</div>
@@ -290,7 +291,7 @@
                                         </div>
                                     </div>
                                     <div class="column">
-                                        <div class="card" style="border-radius: 1rem;">
+                                        <div class="card" style="border-radius: 1rem;" data-aos="zoom-in">
                                             <div class="card-content has-background-custom has-text-link">
                                                 <div class="content">
                                                     <div class="block is-size-4 is-uppercase">Green</div>
@@ -322,7 +323,7 @@
                                         </div>
                                     </div>
                                     <div class="column">
-                                        <div class="card" style="border-radius: 1rem;">
+                                        <div class="card" style="border-radius: 1rem;" data-aos="zoom-in">
                                             <div class="card-content has-background-custom has-text-link">
                                                 <div class="content">
                                                     <div class="block is-size-4 is-uppercase">White</div>
@@ -383,7 +384,7 @@
                                 </div>
                                 <div class="columns">
                                     <div class="column">
-                                        <div class="card" style="border-radius: 1rem;">
+                                        <div class="card" style="border-radius: 1rem;" data-aos="zoom-in">
                                             <div class="card-content has-background-custom has-text-link">
                                                 <div class="content">
                                                     <div class="block is-size-4 is-uppercase">Grey</div>
@@ -418,7 +419,7 @@
                                     </div>
 
                                     <div class="column">
-                                        <div class="card" style="border-radius: 1rem;">
+                                        <div class="card" style="border-radius: 1rem;" data-aos="zoom-in">
                                             <div class="card-content has-background-custom has-text-link">
                                                 <div class="content">
                                                     <div class="block is-size-4 is-uppercase">White</div>
@@ -464,50 +465,50 @@
             </div>
             <div>
                 <div class="timeline is-centered">
-                    <div class="timeline-item is-white">
+                    <div class="timeline-item is-white" data-aos="fade-up" data-aos-duration="2000">
                         <div class="timeline-marker is-violet"></div>
                         <div class="timeline-content">
                             <p class="is-size-5">Диагностика<br /> (бесплатно)</p>
                         </div>
                     </div>
-                    <div class="timeline-item is-white">
+                    <div class="timeline-item is-white" data-aos="fade-up" data-aos-duration="2000">
                         <div class="timeline-marker is-violet"></div>
                         <div class="timeline-content">
                             <p class="is-size-5">Подбор решения<br /> и&nbsp;заключение<br /> психологического<br />
                                 контракта</p>
                         </div>
                     </div>
-                    <div class="timeline-item is-white">
+                    <div class="timeline-item is-white" data-aos="fade-up" data-aos-duration="2000">
                         <div class="timeline-marker is-violet"></div>
                         <div class="timeline-content">
                             <p class="is-size-5">Букинг курса</p>
                         </div>
                     </div>
-                    <div class="timeline-item is-white">
+                    <div class="timeline-item is-white" data-aos="fade-up" data-aos-duration="2000">
                         <div class="timeline-marker is-violet"></div>
                         <div class="timeline-content">
                             <p class="is-size-5">Предоплата<br /> первой и&nbsp;последней<br /> сессий курса</p>
                         </div>
                     </div>
-                    <div class="timeline-item is-white">
+                    <div class="timeline-item is-white" data-aos="fade-up" data-aos-duration="2000">
                         <div class="timeline-marker is-violet"></div>
                         <div class="timeline-content">
                             <p class="is-size-5">Процесс</p>
                         </div>
                     </div>
-                    <div class="timeline-item is-white">
+                    <div class="timeline-item is-white" data-aos="fade-up" data-aos-duration="2000">
                         <div class="timeline-marker is-violet"></div>
                         <div class="timeline-content">
                             <p class="is-size-5">Фиксация<br /> промежуточных<br /> результатов (бесплатно)</p>
                         </div>
                     </div>
-                    <div class="timeline-item is-white">
+                    <div class="timeline-item is-white" data-aos="fade-up" data-aos-duration="2000">
                         <div class="timeline-marker is-violet"></div>
                         <div class="timeline-content">
                             <p class="is-size-5">Процесс</p>
                         </div>
                     </div>
-                    <div class="timeline-item is-white">
+                    <div class="timeline-item is-white" data-aos="fade-up" data-aos-duration="2000">
                         <div class="timeline-marker is-violet"></div>
                         <div class="timeline-content">
                             <p class="is-size-5">Перфоманс ревью<br /> (бесплатно)</p>
@@ -532,6 +533,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/bulma.js"></script>
     <script src="//embed.typeform.com/next/embed.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
