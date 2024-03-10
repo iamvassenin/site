@@ -126,29 +126,25 @@ section.is-rounded {
     border-radius: 42px 42px 0 0;
 }
 
+.content figure {
+    margin-left: .8em;
+    margin-right: 1.2em;
+    text-align: left;
+}
+
 .card {
-    height: 100%;
-}
-
-.card .has-background-custom {
-    background-color: rgba(186, 194, 255, 0.4);
     border-radius: 1rem !important;
-    height: 100%;
+    background-color: rgba(186, 194, 255, 0.4);
+    overflow: hidden;
 }
 
-.button.is-link.is-outlined {
-    background-color: transparent;
-    border-color: #192B4C;
-    color: #192B4C;
+.card-footer {
+    background-color: rgba(186, 194, 255, 0.4);
+    border-top: none;
 }
 
-.button.is-link.is-outlined.is-focused,
-.button.is-link.is-outlined.is-hovered,
-.button.is-link.is-outlined:focus,
-.button.is-link.is-outlined:hover {
-    background-color: #192B4C;
-    border-color: #192B4C;
-    color: #fff;
+a#form::before {
+    content: none;
 }
 
 .is-violet {
