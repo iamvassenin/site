@@ -136,15 +136,18 @@ section.is-rounded {
     border-radius: 1rem !important;
     background-color: rgba(186, 194, 255, 0.4);
     overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .card-footer {
-    background-color: rgba(186, 194, 255, 0.4);
     border-top: none;
+    margin-top: auto;
 }
 
-a#form::before {
-    content: none;
+.card-footer a:before {
+    content: none!important;
 }
 
 .is-violet {
