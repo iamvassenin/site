@@ -177,15 +177,26 @@ section.is-rounded {
 .timeline .timeline-item {
     margin-left: 9em;
     padding-bottom: 3em;
-    }
+}
 
-    .timeline .timeline-item .timeline-marker {
-        top: 0;
-    }
+.timeline .timeline-item .timeline-marker {
+    top: 0;
+}
 
-    .timeline .timeline-item .timeline-content {
-        margin-left: 3rem;
-    }
+.timeline .timeline-item .timeline-content {
+    margin-left: 3rem;
+}
+
+img.instagram {
+    border-radius: 110px;
+    overflow: hidden;
+    width: 340px;
+    margin: auto;
+}
+
+.mx-auto {
+    margin: auto!important;
+}
 
 /* SVG Morph */
 .morph-wrap {
