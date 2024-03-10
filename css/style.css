@@ -136,7 +136,7 @@ section.is-rounded {
     border-radius: 1rem !important;
     background-color: rgba(186, 194, 255, 0.4);
     overflow: hidden;
-    display:flex;
+    display: flex;
     flex-direction: column;
     height: 100%;
 }
@@ -147,11 +147,12 @@ section.is-rounded {
 }
 
 .card-footer a:before {
-    content: none!important;
+    content: none !important;
 }
 
-.is-violet {
-    background-color: #BAC2FF !important;
+.timeline .is-96x96 {
+    width: 96px !important;
+    height: 96px !important;
 }
 
 .timeline-marker {
@@ -172,6 +173,19 @@ section.is-rounded {
 .timeline.is-centered .timeline-item:nth-of-type(2n)::before {
     right: -2px;
 }
+
+.timeline .timeline-item {
+    margin-left: 9em;
+    padding-bottom: 3em;
+    }
+
+    .timeline .timeline-item .timeline-marker {
+        top: 0;
+    }
+
+    .timeline .timeline-item .timeline-content {
+        margin-left: 3rem;
+    }
 
 /* SVG Morph */
 .morph-wrap {
