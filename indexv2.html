@@ -8,16 +8,24 @@
     <link rel="stylesheet" href="css/bulma.min.css">
     <link rel="stylesheet" href="css/timeline.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/aos.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
-<body class="loading is-clipped has-iam-bg-black">
+<body class="loading is-clipped">
+    <div class="morph-wrap">
+        <svg class="morph" width="900" height="770" viewBox="0 0 900 770">
+            <path
+                d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z" />
+        </svg>
+    </div>
     <!-- Navbar -->
-    <section class="section pt-1 pb-6">
+    <section class="section">
         <div class="container">
+            <img class="content__img is-hidden" src="#" />
+            <p class="content__title is-hidden"></p>
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                    <a class="navbar-item is-craftwork-medium is-size-3 is-iam-green" href="#">
+                    <a class="navbar-item is-craftwork-medium is-size-3 is-special-green" href="#">
                         I Am
                     </a>
                     <a role="button" class="has-text-white navbar-burger" aria-label="menu" aria-expanded="false"
@@ -27,7 +35,7 @@
                         <span aria-hidden="true"></span>
                     </a>
                 </div>
-                <div id="navbarBasic" class="navbar-menu has-iam-bg-transparent" style="box-shadow: none;">
+                <div id="navbarBasic" class="navbar-menu is-transparent" style="box-shadow: none;">
                     <div class="navbar-end">
                         <div class="navbar-item">
                             <div class="buttons">
@@ -48,6 +56,8 @@
     <!-- Top Section. Title -->
     <section class="section">
         <div class="container">
+            <img class="content__img is-hidden" src="#" />
+            <p class="content__title is-hidden"></p>
             <h1 class="title is-big-title is-craftwork-bold has-text-white">
                 Коучинг
             </h1>
@@ -57,11 +67,13 @@
             <div class="columns">
                 <div class="column is-half is-offset-half">
                     <div class="block">
-                        <figure class="image vimeo">
-                            <iframe
-                                src="https://player.vimeo.com/video/921810581?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                                width="590" height="300" frameborder="0"
-                                allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title=""></iframe>
+                        <!-- <figure class="image youtube">
+                            <iframe src="https://player.vimeo.com/video/921810581?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="291" height="218" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="I Am Vassenin"></iframe>
+                        </figure> -->
+                        <figure class="image youtube">
+                            <iframe class="has-ratio" width="640" height="360"
+                                src="https://www.youtube.com/embed/sAcxOJiLfBY" frameborder="0"
+                                allowfullscreen></iframe>
                         </figure>
                     </div>
                     <div class="block is-uppercase has-text-white has-text-centered px-4">Вячеслав Васенин мета-коуч,
@@ -73,17 +85,19 @@
     <!-- Top Section. Description -->
     <section class="section is-medium has-text-white">
         <div class="container">
+            <img class="content__img is-hidden" src="#" />
+            <p class="content__title is-hidden"></p>
             <div class="columns">
                 <div class="column is-half">
                     <div class="block is-size-4 is-craftwork-medium">
-                        <span class="is-iam-green">I&nbsp;Am</span>&nbsp;&mdash; это метод, появившийся
+                        <span class="is-special-green">I&nbsp;Am</span>&nbsp;&mdash; это метод, появившийся
                         в&nbsp;следствии моего глубокого
                         четырехлетнего кризиса, выходя из
                         которого я&nbsp;точно усвоил одну важную истину:
                         &laquo;у&nbsp;каждого нашего действия есть последствия&raquo;.
                     </div>
                     <div class="block is-size-4 is-craftwork-medium">
-                        <span class="is-iam-green">I&nbsp;Am</span> мульти-модален, он&nbsp;собрал в&nbsp;себе все
+                        <span class="is-special-green">I&nbsp;Am</span> мульти-модален, он&nbsp;собрал в&nbsp;себе все
                         мои знания
                         из&nbsp;областей психологии, метафизики,
                         нейрофизики,
@@ -97,11 +111,12 @@
         </div>
     </section>
     <!-- Toggle -->
-    <section class="has-iam-bg-white is-iam-black is-rounded pt-6 mb-6" style="padding-bottom: 120px;">
+    <section class="has-background-custom-grey has-text-link is-rounded pt-6 mb-6 sticky">
         <section class="section">
             <div class="container">
-                <div class="block is-craftwork-bold is-size-1">Программы <span class="is-iam-green">I Am</span></div>
+                <div class="block is-craftwork-bold is-64px">I&nbsp;Am</div>
                 <div class="tabs-wrapper">
+
                     <div class="tabs is-large column is-one-third is-pulled-left">
                         <ul class="is-flex-direction-column is-block">
                             <li class="is-active">
@@ -112,6 +127,7 @@
                             </li>
                         </ul>
                     </div>
+
                     <div class="tabs-content">
                         <ul>
                             <li class="is-active">
@@ -134,10 +150,15 @@
                                 </div>
                                 <div class="is-clearfix"></div>
                                 <!-- Personal Cards -->
-                                <div class="columns mt-6">
+                                <img class="content__img is-hidden" src="#" />
+                                <p class="content__title is-hidden"></p>
+                                <div class="block is-size-3 is-uppercase is-craftwork-medium mt-6">
+                                    Программы для личности
+                                </div>
+                                <div class="columns">
                                     <div class="column">
                                         <div class="card p-3 pb-6" style="border-radius: 1rem;">
-                                            <div class="card-content is-iam-black">
+                                            <div class="card-content has-text-link">
                                                 <div class="content">
                                                     <div class="media columns is-vcentered">
                                                         <div class="media-left">
@@ -173,14 +194,14 @@
                                             </div>
                                             <footer class="card-footer">
                                                 <a href="#form"
-                                                    class="button is-rounded has-iam-bg-black has-text-white is-fullwidth is-uppercase mx-4">Заказать
+                                                    class="button is-rounded has-background-dark-link has-text-white is-fullwidth is-uppercase mx-4">Заказать
                                                     диагностику</a>
                                             </footer>
                                         </div>
                                     </div>
                                     <div class="column">
                                         <div class="card p-3 pb-6" style="border-radius: 1rem;">
-                                            <div class="card-content is-iam-black">
+                                            <div class="card-content has-text-link">
                                                 <div class="content">
                                                     <div class="media columns is-vcentered">
                                                         <div class="media-left">
@@ -221,14 +242,14 @@
                                             </div>
                                             <footer class="card-footer">
                                                 <a href="#form"
-                                                    class="button is-rounded has-iam-bg-black has-text-white is-fullwidth is-uppercase mx-4">Заказать
+                                                    class="button is-rounded has-background-dark-link has-text-white is-fullwidth is-uppercase mx-4">Заказать
                                                     диагностику</a>
                                             </footer>
                                         </div>
                                     </div>
                                     <div class="column">
                                         <div class="card p-3 pb-6" style="border-radius: 1rem;">
-                                            <div class="card-content is-iam-black">
+                                            <div class="card-content has-text-link">
                                                 <div class="content">
                                                     <div class="media columns is-vcentered">
                                                         <div class="media-left">
@@ -268,7 +289,7 @@
                                             </div>
                                             <footer class="card-footer">
                                                 <a href="#form"
-                                                    class="button is-rounded has-iam-bg-black has-text-white is-fullwidth is-uppercase mx-4">Заказать
+                                                    class="button is-rounded has-background-dark-link has-text-white is-fullwidth is-uppercase mx-4">Заказать
                                                     диагностику</a>
                                             </footer>
                                         </div>
@@ -294,10 +315,15 @@
                                 </div>
                                 <div class="is-clearfix"></div>
                                 <!-- Business Cards -->
-                                <div class="columns mt-6">
+                                <img class="content__img is-hidden" src="#" />
+                                <p class="content__title is-hidden"></p>
+                                <div class="block is-size-3 is-uppercase is-craftwork-medium mt-6">
+                                    Программы для бизнеса
+                                </div>
+                                <div class="columns">
                                     <div class="column">
                                         <div class="card p-3 pb-6" style="border-radius: 1rem;">
-                                            <div class="card-content is-iam-black">
+                                            <div class="card-content has-text-link">
                                                 <div class="content">
                                                     <div class="media columns is-vcentered">
                                                         <div class="media-left">
@@ -340,14 +366,14 @@
                                             </div>
                                             <footer class="card-footer">
                                                 <a href="#form"
-                                                    class="button is-rounded has-iam-bg-black has-text-white is-fullwidth is-uppercase mx-4">Заказать
+                                                    class="button is-rounded has-background-dark-link has-text-white is-fullwidth is-uppercase mx-4">Заказать
                                                     диагностику</a>
                                             </footer>
                                         </div>
                                     </div>
                                     <div class="column">
                                         <div class="card p-3 pb-6" style="border-radius: 1rem;">
-                                            <div class="card-content is-iam-black">
+                                            <div class="card-content has-text-link">
                                                 <div class="content">
                                                     <div class="media columns is-vcentered">
                                                         <div class="media-left">
@@ -388,7 +414,7 @@
                                             </div>
                                             <footer class="card-footer">
                                                 <a href="#form"
-                                                    class="button is-rounded has-iam-bg-black has-text-white is-fullwidth is-uppercase mx-4">Заказать
+                                                    class="button is-rounded has-background-dark-link has-text-white is-fullwidth is-uppercase mx-4">Заказать
                                                     диагностику</a>
                                             </footer>
                                         </div>
@@ -403,9 +429,12 @@
         </section>
     </section>
     <!-- Work Model -->
-    <section class="section is-rounded has-iam-bg-grey is-iam-black" style="margin-top: -90px;">
+    <section class="section has-text-white">
         <div class="container">
-            <div class="block is-craftwork-bold is-size-1">Модель работы</div>
+            <img class="content__img is-hidden" src="#" />
+            <p class="content__title is-hidden"></p>
+            <div class="block is-craftwork-bold is-64px">Модель работы</div>
+
             <section class="section is-medium">
                 <div class="timeline">
                     <div class="timeline-item is-white">
@@ -482,7 +511,7 @@
     <!-- Instagram -->
     <section class="section is-medium has-text-white">
         <div class="container">
-            <div class="block is-craftwork-bold is-size-1">Я приглашаю вас<br /> в&nbsp;ваше мышление...</div>
+            <div class="block is-craftwork-bold is-64px">Я приглашаю вас<br /> в&nbsp;ваше мышление...</div>
             <div class="column is-half pt-6">
                 <figure class="image">
                     <img class="instagram" src="files/portrait.png">
@@ -504,28 +533,22 @@
                 </article>
             </div>
         </div>
+        <img class="content__img is-hidden" src="#" />
+        <p class="content__title is-hidden"></p>
     </section>
     <!-- Forms -->
-    <section class="section is-medium has-iam-bg-white is-iam-black" id="form">
+    <section class="section is-medium has-background-custom-grey has-text-link sticky" id="form">
         <div class="container">
-            <div class="block is-craftwork-bold is-size-1">
+            <div class="block is-craftwork-bold is-64px">
                 Забронировать<br /> диагностику
             </div>
             <div class="block">
                 <div data-tf-live="01HR7W13SBR5Q4KZEAXBQ7TX98"></div>
             </div>
         </div>
+        <img class="content__img is-hidden" src="#" />
+        <p class="content__title is-hidden"></p>
     </section>
-    <!-- Footer -->
-    <footer class="section footer py-6 has-iam-bg-black is-iam-white">
-        <div class="container">
-            <div class="content has-text-right is-uppercase">
-                Собрано <a href="http://tinystudio.cc" target="_blank" class="is-iam-white">Tiny Studio</a>
-                <a href="mailto:hello@tinystudio.cc?body=Привет! Увидел вашу работу на сайте https://iamvassenin.com. Хочу себе такой же сайт!"
-                    target="_blank" class="is-iam-white pl-4">Заказать работу</a>
-            </div>
-        </div>
-    </footer>
 
     <!-- Legal -->
     <div id="modal" class="modal">
@@ -551,7 +574,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/bulma.js"></script>
     <script src="//embed.typeform.com/next/embed.js"></script>
-    <script src="js/aos.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
@@ -571,6 +594,17 @@
             modal.close();
         });
     </script>
+    <!-- Animation SVG -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/scrollMonitor.js"></script>
+    <script src="js/demo2.js"></script>
+    <!-- Animation Sticky -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/lenis.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
