@@ -175,7 +175,7 @@ section.is-rounded {
     content: none !important;
 }
 
-.is-rounded {
+.is-borderless {
     border: none!important;
 }
 
