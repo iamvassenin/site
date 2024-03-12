@@ -175,6 +175,10 @@ section.is-rounded {
     content: none !important;
 }
 
+.is-rounded {
+    border: none!important;
+}
+
 .timeline .is-96x96 {
     width: 96px !important;
     height: 96px !important;
