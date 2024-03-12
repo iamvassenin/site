@@ -45,6 +45,10 @@
     color: #959A9D !important;
 }
 
+.is-iam-purple {
+    color: #B0A3FF !important;
+}
+
 /* Background Colors */
 
 .has-iam-bg-black {
@@ -67,6 +71,10 @@
     background-color: #959A9D !important;
 }
 
+.has-iam-bg-purple {
+    background-color: #B0A3FF !important;
+}
+
 .has-iam-bg-transparent {
     background-color: transparent;
 }
@@ -79,6 +87,48 @@ body {
     background-color: transparent;
 }
 
+.hero {
+    position: relative;
+}
+
+.hero-video video {
+    cursor: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    display: block;
+    object-fit: cover;
+    background-color: #0B0E0B;
+    object-position: 50% 50%;
+}
+
+.hero-video.second video {
+    width: 75%;
+    height: 75%;
+    object-fit: contain;
+    background-color: #fff;
+    left: 80%;
+    top: 60%;
+    min-height: 50%;
+    min-width: 50%;
+}
+
+.hero-video .frame {
+    background: linear-gradient(180deg, rgba(11, 14, 11, 0) 80%, #0B0E0B 100%);
+    flex: none;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: -1px;
+    z-index: 2;
+}
+
+.hero-video .hero-body {
+    z-index: 3;
+}
+
 .is-big-title {
     font-size: 116px;
 }
@@ -86,6 +136,43 @@ body {
 .vimeo iframe {
     width: 100%;
     height: 300px;
+}
+
+.marquee {
+    overflow: hidden;
+    font-size: 320px;
+}
+
+.marquee__inner {
+    display: flex;
+}
+
+.marquee__line {
+    flex-shrink: 0;
+    margin: 0;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+p.biiig {
+    overflow: hidden;
+    font-size: 320px;
+    white-space: nowrap;
+    line-height: 100%;
+}
+
+@keyframes marqueeLine {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 .tabs ul {
@@ -145,13 +232,12 @@ section.is-rounded {
 
 .card {
     border-radius: 1rem !important;
-    background: rgba(149, 154, 157, .5);
-    background-image: url(../files/silver.jpg);
-    background-size: cover;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     height: 100%;
+    border: 1px solid #B0A3FF;
+    box-shadow: none;
 }
 
 .cards .column:nth-of-type(1) .card {
@@ -176,7 +262,7 @@ section.is-rounded {
 }
 
 .is-borderless {
-    border: none!important;
+    border: none !important;
 }
 
 .timeline .is-96x96 {
@@ -204,7 +290,7 @@ section.is-rounded {
 }
 
 .timeline .timeline-item {
-    margin-left: 9em;
+    /* margin-left: 9em; */
 }
 
 .timeline .timeline-item .timeline-marker {
@@ -224,6 +310,15 @@ img.instagram {
 
 .mx-auto {
     margin: auto !important;
+}
+
+.content .is-140x140 {
+    margin-left: -1em;
+}
+
+.is-140x140 {
+    width: 140px;
+    height: 140px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -253,5 +348,11 @@ img.instagram {
     .timeline .is-96x96 {
         width: 64px !important;
         height: 64px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-video {
+        display: inline !important;
     }
 }
