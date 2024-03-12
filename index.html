@@ -59,9 +59,24 @@
         <!-- Hero Content -->
         <div class="frame"></div>
         <div class="hero-video">
-            <video playsinline autoplay muted loop>
+            <!-- <video playsinline autoplay muted loop loop autoPlay playsinline="true" disablePictureInPicture="true" id="myVideo" poster="image.jpg" autoplay="" muted="" loop="" id="myVideo" poster="image.jpg">
+                <source src="files/top-bg.mp4" type="video/mp4">
+            </video> -->
+            <!-- <div id="video-container">
+            </div> -->
+            <video id="video" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="files/top-bg.mp4" type="video/mp4">
             </video>
+            <style>
+                #video-container {
+                    height: 100%;
+                    width: 100vw;
+                    background-image: url("files/top-bg.mp4");
+                    background-color: transparent;
+                    position: absolute;
+                    z-index: 1;
+                }
+            </style>            
         </div>
         <div class="hero-body">
             <div class="container">
@@ -402,7 +417,10 @@
     <section class="hero has-iam-bg-white is-iam-black is-rounded video py-6" id="model">
         <div class="frame"></div>
         <div class="hero-video second">
-            <video playsinline autoplay muted loop>
+            <!-- <video playsinline autoplay muted loop>
+                <source src="files/video.mp4" type="video/mp4">
+            </video> -->
+            <video id="video" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="files/video.mp4" type="video/mp4">
             </video>
         </div>
