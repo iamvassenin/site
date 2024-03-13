@@ -87,8 +87,18 @@ body {
     background-color: transparent;
 }
 
+.timeline {
+    z-index: 2;
+    position: relative;
+}
+
 .hero {
     position: relative;
+}
+
+video::-webkit-media-controls-panel {
+    display: none !important;
+    opacity: 1 !important;
 }
 
 .hero-video video,
@@ -110,8 +120,9 @@ body {
     height: 75%;
     object-fit: contain;
     background-color: #fff;
-    left: 77%;
+    left: 76%;
     top: 50%;
+    z-index: 1;
 }
 
 .hero-video.second img {
@@ -333,6 +344,10 @@ img.instagram {
 .box {
     background-color: transparent;
     border-radius: 110px;
+}
+
+.modal.is-active {
+    z-index: 99;
 }
 
 @media screen and (min-width:769px) {
