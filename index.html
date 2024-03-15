@@ -4,10 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>I Am Vassenin</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="программа, I Am, коучинг, Васенин" />
-    <meta name="author" content="Tiny Studio" />
+    <meta http-equiv="Cache-control" content="no-cache">
+    <title>Коучинг от&nbsp;Вячеслава Васенина</title>
+    <meta name="description"
+        content="Коучинг от&nbsp;Вячеслава Васенина&nbsp;&mdash; это трансформационные программы для людей и&nbsp;безнеса. Записывайтесь на&nbsp;бесплатную диагностику уже сейчас." />
+    <meta name="keywords"
+        content="коучинг, психология, развитие личности, саморазвитие консультации, коучинговые программы">
+    <meta name="author" content="Вячеслав Васенин">
+    <meta name="robots" content="index, follow">
     <link rel="shortcut icon" href="favicon.ico">
     <!-- Styles -->
     <link rel="stylesheet" href="css/bulma.min.css">
@@ -38,10 +42,8 @@
 
 <body class="loading is-clipped has-background-black">
     <!-- Top Section. Video Title -->
-    <section class="hero is-fullheight video py-1" id="about" data-aos="fade-zoom-in"
-    data-aos-easing="ease-in-back"
-    data-aos-delay="500"
-    data-aos-offset="0">
+    <section class="hero is-fullheight video py-1" id="about" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+        data-aos-delay="500" data-aos-offset="0">
         <div class="hero-head">
             <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
                 <div class="container is-flex is-justify-content-space-between pr-1">
@@ -58,12 +60,11 @@
         </div>
         <!-- Hero Content -->
         <div class="hero-video">
-            <video id="video" preload="metadata" autoplay="autoplay" playsinline muted="on"
-                 loop="loop">
+            <video id="video" preload="metadata" autoplay="autoplay" playsinline muted="on" loop="loop">
                 <source src="files/top-bg.mp4" type="video/mp4">
             </video>
-            <img id="img" autoplay="autoplay" preload="metadata" playsinline muted="on" 
-                loop="loop" src="files/top-bg.mp4">
+            <img id="img" autoplay="autoplay" preload="metadata" playsinline muted="on" loop="loop"
+                src="files/top-bg.mp4">
         </div>
         <div class="hero-body">
             <div class="container">
@@ -81,9 +82,9 @@
                                         src="files/profile.png" /></a>
                             </figure>
                         </div>
-                        <div class="block has-text-white has-text-centered px-4">Вячеслав Васенин,
+                        <div class="block has-text-white has-text-centered px-4 is-uppercase">Вячеслав Васенин,
                             мета-коуч,
-                            бизнес консультант, автор программы I&nbsp;Am</div>
+                            бизнес<br /> консультант, автор программы I&nbsp;Am</div>
                     </div>
                 </div>
             </div>
@@ -118,7 +119,7 @@
         </div>
     </section>
     <!-- Running Line -->
-    <section class="section has-text-white">
+    <section class="has-text-white">
         <div class="marquee is-craftwork-bold">
             <div class="marquee__inner">
                 <p class="marquee__line">I Am.</p>
@@ -383,12 +384,11 @@
     <!-- Work Model -->
     <section class="hero has-iam-bg-white is-iam-black is-rounded video py-6" id="model">
         <div class="hero-video second">
-            <video id="video" preload="metadata" autoplay="autoplay" playsinline muted="on"
-                 loop="loop">
+            <video id="video2" preload="metadata" autoplay="autoplay" playsinline muted="on" loop="loop">
                 <source src="files/video.mp4" type="video/mp4">
             </video>
-            <img id="img" autoplay="autoplay" preload="metadata" playsinline muted="on" 
-                loop="loop" src="files/video.mp4">
+            <img id="img2" autoplay="autoplay" preload="metadata" playsinline muted="on" loop="loop"
+                src="files/video.mp4">
         </div>
         <div class="hero-body">
             <div class="block is-craftwork-bold is-size-1">Модель работы</div>
@@ -512,12 +512,14 @@
                             <p class="py-1"><a href="#about" class="is-iam-grey is-uppercase mb-3">Обо мне</a></p>
                             <p class="py-1"><a href="#iam" class="is-iam-grey is-uppercase">Метод I Am</a></p>
                             <p class="py-1"><a href="#inside" class="is-iam-grey is-uppercase">Программы</a></p>
+                            <p class="py-1"><a href="#mission" class="is-iam-grey is-uppercase">Миссия</a></p>
                         </div>
                         <div class="column is-one-third">
-                            <p class="py-1"><a href="#mission" class="is-iam-grey is-uppercase">Миссия</a></p>
                             <p class="py-1"><a href="#model" class="is-iam-grey is-uppercase">Модель</a></p>
-                            <p class="py-1"><a data-target="#modal"
-                                    class="modal-button is-iam-grey is-uppercase">Оферта</a></p>
+                            <p class="py-1"><a data-target="#modal-offer"
+                                    class="modal-button-offer is-iam-grey is-uppercase">Оферта</a></p>
+                            <p class="py-1"><a data-target="#modal-policy"
+                                    class="modal-button-policy is-iam-grey is-uppercase">Политики</a></p>
                         </div>
                     </div>
                 </div>
@@ -527,41 +529,54 @@
         <p class="is-craftwork-medium has-text-right pr-4">Собрано <a href="http://tinystudio.cc" target="_blank"
                 class="is-iam-grey">Tiny
                 Studio</a>, 2024</p>
-        </footer>
+    </section>
 
-        <!-- Video -->
-        <div id="modal-js-example" class="modal">
-            <div class="modal-background"></div>
-            <div class="modal-content">
-                <div class="box">
-                    <iframe src="https://player.vimeo.com/video/921810581?h=d6194333c4" width="100%" height="540"
+    <!-- Video -->
+    <div id="modal-js-example" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box">
+                <iframe src="https://player.vimeo.com/video/921810581?h=d6194333c4" width="100%" height="540"
                     frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close" onclick="javascript:player.api('pause')"></button>
+    </div>
+
+    <!-- Legal -->
+    <div id="modal-offer" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Оферта</p>
+            </header>
+            <section class="modal-card-body">
+                <div class="content">
+                    <embed src="files/offer.pdf" width="100%" height="540" type="application/pdf" frameborder="0">
                 </div>
-            </div>
-            <button class="modal-close is-large" aria-label="close"></button>
+            </section>
         </div>
-
-        <!-- Legal -->
-        <div id="modal" class="modal">
-            <div class="modal-background"></div>
-            <div class="modal-card">
-                <header class="modal-card-head">
-                    <p class="modal-card-title">Оферта</p>
-                </header>
-                <section class="modal-card-body">
-                    <div class="content">
-                        <embed src="files/offer.pdf" width="100%" height="540" type="application/pdf" frameborder="0">
-                    </div>
-                </section>
-            </div>
+    </div>
+    <div id="modal-policy" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Политики платежей и конфиденциальности</p>
+            </header>
+            <section class="modal-card-body">
+                <div class="content">
+                    <embed src="files/policy.pdf" width="100%" height="540" type="application/pdf" frameborder="0">
+                </div>
+            </section>
         </div>
+    </div>
 
-        <!-- Scripts -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bulma.js"></script>
-        <script src="js/embed-typeform.js"></script>
-        <script src="js/aos.min.js"></script>
-        <script src="js/custom.js"></script>
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bulma.js"></script>
+    <script src="js/embed-typeform.js"></script>
+    <script src="js/aos.min.js"></script>
+    <script src="js/custom.js"></script>
 </body>
 
 </html>

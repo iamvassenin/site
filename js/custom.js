@@ -2,19 +2,34 @@
 AOS.init();
 
 // Modal
-$(".modal-button").click(function () {
+$(".modal-button-offer").click(function () {
     var target = $(this).data("target");
     $("html").addClass("is-clipped");
     $(target).addClass("is-active");
-    var modal = Bulma('#modal').modal();
-    modal.open();
+    var modalOffer = Bulma('#modal-offer').modal();
+    modalOffer.open();
 });
 
 $(".close").click(function () {
     $("html").removeClass("is-clipped");
     $(this).parent().removeClass("is-active");
-    var modal = Bulma('#modal').modal();
-    modal.close();
+    var modalOffer = Bulma('#modal-offer').modal();
+    modalOffer.close();
+});
+
+$(".modal-button-policy").click(function () {
+    var target = $(this).data("target");
+    $("html").addClass("is-clipped");
+    $(target).addClass("is-active");
+    var modalPolicy = Bulma('#modal-policy').modal();
+    modalPolicy.open();
+});
+
+$(".close").click(function () {
+    $("html").removeClass("is-clipped");
+    $(this).parent().removeClass("is-active");
+    var modalPolicy = Bulma('#modal-policy').modal();
+    modalPolicy.close();
 });
 
 // Modal
@@ -26,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function closeModal($el) {
         $el.classList.remove('is-active');
+        player.api('pause');
     }
 
     function closeAllModals() {
@@ -66,6 +82,8 @@ var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 if (isSafari) {
     document.getElementById("video").style.display = "none";
+    document.getElementById("video2").style.display = "none";
 } else {
     document.getElementById("img").style.display = "none";
+    document.getElementById("img2").style.display = "none";
 }
