@@ -53,7 +53,10 @@
                         </a>
                     </div>
                     <div class="navbar-end py-3">
-                        <div data-tf-live="01HRWS459Q1S53H5BS87N6TT31"></div>
+                        <a class="button is-rounded is-borderless is-iam-white has-iam-bg-purple"
+                            data-target="#modal-form" href="https://forms.yandex.ru/cloud/65f5e370f47e73e693f7c7e9/" target="_blank">
+                            Заказать диагностику
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -570,6 +573,20 @@
             </section>
         </div>
     </div>
+    <div id="modal-form" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Форма диагностики</p>
+            </header>
+            <section class="modal-card-body">
+                <div class="content">
+                    <iframe src="https://forms.yandex.ru/cloud/65f5e370f47e73e693f7c7e9/?iframe=1" frameborder="0"
+                        name="ya-form-65f5e370f47e73e693f7c7e9" width="100%"></iframe>
+                </div>
+            </section>
+        </div>
+    </div>
 
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script>
@@ -577,6 +594,7 @@
     <script src="js/embed-typeform.js"></script>
     <script src="js/aos.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="https://forms.yandex.ru/_static/embed.js"></script>
 </body>
 
 </html>

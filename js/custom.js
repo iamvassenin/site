@@ -32,6 +32,21 @@ $(".close").click(function () {
     modalPolicy.close();
 });
 
+$(".modal-button-form").click(function () {
+    var target = $(this).data("target");
+    $("html").addClass("is-clipped");
+    $(target).addClass("is-active");
+    var modalForm = Bulma('#modal-form').modal();
+    modalForm.open();
+});
+
+$(".close").click(function () {
+    $("html").removeClass("is-clipped");
+    $(this).parent().removeClass("is-active");
+    var modalForm = Bulma('#modal-form').modal();
+    modalForm.close();
+});
+
 // Modal
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
